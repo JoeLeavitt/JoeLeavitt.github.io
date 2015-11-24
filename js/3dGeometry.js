@@ -1,7 +1,7 @@
 
 Skills = function(window, $) {
 
-        var skills = CV.skills;
+    var skills = Stuff.skills;
     
     var editor = ace.edit($('#skills .editor')[0]);
     editor.setValue(JSON.stringify(skills, null, 4));
