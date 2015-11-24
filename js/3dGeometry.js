@@ -494,12 +494,9 @@ Skills = function(window, $) {
     };
     
     start();
-    
-    $(window).on('skills-enter', function(){
-        startRotateAnimation();
-        startTimer2();
-        setInterval(startTimer2, 12000);
-    })
+    startRotateAnimation();
+    startTimer2();
+    setInterval(startTimer2, 12000);
 
     return ({
         startRotateAnimation: startRotateAnimation
