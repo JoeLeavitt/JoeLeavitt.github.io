@@ -23,9 +23,9 @@ d3.selection.prototype.animate = function(opts) {
     	return t;
 };
 
-var _skills = Skills(window, jQuery);
+// var _skills = Skills(window, jQuery);
 
-Skills = function(window, $) {
+// Skills = function(window, $) {
 
     var skills = Stuff.skills;
     
@@ -527,4 +527,4 @@ Skills = function(window, $) {
     return ({
         startRotateAnimation: startRotateAnimation
     })
-}
+//}
