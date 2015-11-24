@@ -1,4 +1,30 @@
 
+function adjustEditor(editor) {
+    	editor.setHighlightActiveLine(false);
+    	editor.setShowPrintMargin(false);
+    	editor.setReadOnly(true); // false to make it editable
+    	editor.setTheme("ace/theme/github");
+    	editor.renderer.setShowGutter(false);
+    	editor.getSession().setMode("ace/mode/javascript");
+    	editor.session.selection.clearSelection();
+    	editor.setBehavioursEnabled(false)
+    	editor.renderer.setStyle("disabled", true);
+    	editor.setOption("dragEnabled", false);
+    	editor.blur();
+}
+
+d3.selection.prototype.animate = function(opts) {
+        !opts && (opts = {})
+    	var dur = opts.duration ? opts.duration : 1500;
+    	var ease = opts.ease ? opts.ease : d3.ease('exp-out');
+    	var delay = opts.delay ? opts.delay : 0;
+    	delete opts.duration;
+    	var t = this.transition().ease(ease).duration(dur).delay(delay);
+    	return t;
+};
+
+var _skills = Skills(window, jQuery);
+
 Skills = function(window, $) {
 
     var skills = Stuff.skills;
