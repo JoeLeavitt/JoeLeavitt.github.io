@@ -1,0 +1,27 @@
+figure {
+width: 256;
+margin: 24px auto;
+position: relative;
+box-shadow: 0 2px 5px rgba(0,0,0,.4);
+border-radius: 5px;
+}
+
+figure img {
+display: block;
+border-radius: 5px;
+}
+
+figure:after {
+position: absolute;
+pointer-events: none;
+content:'';
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+border-radius: 5px;
+box-shadow: inset 0 0 0 1px rgba(255,255,255,.2);
+background-image: linear-gradient(-45deg, rgba(255,255,255,.4), rgba(255,255,255,.2) 50%, rgba(255,255,255,0) 50%);
+-webkit-mask-image: linear-gradient(#000, transparent);
+
+}

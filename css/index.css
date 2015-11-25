@@ -1,0 +1,207 @@
+
+a:link {color:#007dd5;text-decoration: none}      /* unvisited link */
+a:visited {color:#007dd5;text-decoration: none}  /* visited link */
+a:hover {color:#38a1eb;text-decoration: none}  /* mouse over link */
+a:active {color:#007dd5;text-decoration: none}  /* selected link */
+
+body 
+{
+    font-family: Arial;
+    color: {color:#000000};
+    /*background-image: url(../bg.gif);*/
+    font-size: 10pt;
+}
+
+figure
+{
+    overflow: hidden;
+}
+
+#directory
+{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+}
+
+.appicon
+{
+    cursor: pointer;
+}
+
+.fig_container
+{
+    color: white;
+    background-color: grey;
+}
+
+
+.return
+{
+    top: 60px;
+    left: 19.1875px;
+    visibility: visible;
+    display: none;
+    opacity: 0.8;
+}
+
+.spacer
+{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 69px;
+    position: fixed;
+    border:0px solid;
+    border-color:"#d2d2d2";
+    z-index: 10;
+}
+
+#content1
+{
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    display: none;
+    z-index: 1;
+}
+
+.m1logo
+{
+    z-index: 100;
+}
+
+#bg1
+{
+    width: 400px;
+    height: 290px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-top: -178px;
+    margin-left: -200px;
+}
+
+#bg2
+{
+    width: 430px;
+    height: 80px;
+    position: fixed;
+    margin-top: -10px;
+    margin-left: 25px;
+    top: 0;
+    left: 0;
+}
+
+#backgroundDiv img
+{
+    left: 0;
+    height: 100%;
+    top: 0;
+}
+
+.card
+{
+    border: 1px #eeeeee solid;
+    background-color: rgba(255,255,255,0.85);
+    box-shadow:0 5px 100px rgba(0,0,0,0.9);
+    border-radius: 10px;
+    z-index: 1;
+    display: none;
+}
+
+.sidewing
+{
+    width: 160px;
+    border: 1px solid black;
+    font-size: 15px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    margin-top: -200px;
+}
+
+.left
+{
+    float: left;
+    left: 0;
+}
+
+.right
+{
+    float: right;
+    right: 0;
+}
+
+#backgroundDiv
+{
+    position: fixed;
+    z-index; 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    opacity: .8;
+}
+
+.oldnav a img
+{
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+.m1icon, .m1logo
+{
+    overflow-y:auto;
+    border:0px solid;
+    border-color:"#d2d2d2";
+    display:block;
+    position:fixed;
+    top:50%;
+    left:50%;
+}
+
+#m1menu
+{
+    top: 50%;
+    left: 32%;
+    margin-top: -150px;
+    margin-left: -180px;
+    position: fixed;
+}
+
+#m1menu .m1icon, #m1menu .m1logo
+{
+    position: relative;
+    display: inline;
+}
+
+/*
+[data-title=home] {
+   cursor: default;
+}
+*/
+
+#menu
+{
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    margin-top: -157px;
+    margin-left: -163px;
+}
+
+img
+{
+    border:0;
+}
+
+iframe
+{
+    border:none;
+}
+
+/* for image preloading */
+
