@@ -1,0 +1,139 @@
+\documentclass[11pt]{article}
+
+% page dimensions
+\usepackage[top=.3in, bottom=.35in, left=0.35in, right=.35in]{geometry}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+% margin notes
+\usepackage{marginnote}
+\reversemarginpar
+
+% font
+\usepackage[T1]{fontenc}
+\usepackage[rm,light,sfdefault]{roboto}
+
+% spacing adjustments
+\setlength\parindent{0pt} % no automatic indent
+\setlength{\tabcolsep}{0em} % table horizontal spacing
+\setlist{nosep}
+\setlist[itemize]{label=$\circ$}
+\renewcommand{\baselinestretch}{1} % line spacing
+
+% custom commands
+% \newcommand{\rsection}[1]{\hspace{-0.3in}\rotatebox[origin=l]{90}{\marginnote{#1}}\vspace{-1em}} % section with title in margin
+\newcommand{\rsection}[1]{\vspace{1.5em}\textcolor{gray}{\Large \robotoslab #1}\vspace{0.5em}}
+\newcommand{\bd}[1]{\textbf{#1}}
+\newcommand{\bt}[1]{\textit{\textbf{#1}}} % bold title
+\newcommand{\gap}[0]{\vspace{0.3em}} % gap between items
+\newcommand{\sgap}[0]{\vspace{0.2em}} % small gap between items
+\newcommand{\dash}[0]{ $-$ } % styled dash
+\newcommand{\tabsep}[0]{\, / \,} % table separator
+\newcommand{\arr}[0]{ $\hspace{0.2em}\rightarrow\hspace{0.2em}$ } % arrow
+\newcommand{\gray}[1]{\textcolor{gray}{#1}}
+\newcommand{\e}[0]{> }
+\newcommand{\E}[0]{$\triangleright$ }
+\newcommand{\class}[2]{\e #1 // #2}
+
+\begin{document}
+\pagenumbering{gobble} % avoid page numbering
+
+\begin{tabularx}{\textwidth}{Xr}
+    \robotoslab
+    \begin{tabular}[x]{@{}l@{}}
+        {\Huge Joseph Leavitt} \sgap \\
+       % {\Large \href{}{}}
+    \end{tabular}
+&   \footnotesize
+    \begin{tabular}[x]{@{}r@{}}
+        (772) 812-7473 \\
+        JoeLeav1@gmail.com \\
+        https://github.com/JoeLeavitt \\
+    \end{tabular}
+\end{tabularx}
+\rule{7.8in}{0.05em}
+
+%\gap
+
+\rsection{Education}
+
+\bt{University of Central Florida} \hfill \gray{2014 - 2018}
+
+Bachelor of Science in Computer Science \hfill GP\hspace{-0.5px}A: 3.2/4.0
+
+\rsection{Skills}
+
+\textbf{Languages}: Python, Java, JavaScript, HTML, CSS
+
+\textbf{Frameworks and Libraries}: Node.js, Socket.IO, Polymer.js, TensorFlow, TensorFlow Object Detection API, TFLearn, NumPy, OpenCV, fast.ai, PyTorch
+
+\textbf{Tools}: AWS, Jupyer, Vim, Cron, Bash, Terminal, Linux, macOS, Windows, Git, IntelliJ IDEA, tmux, WinSCP
+
+\textbf{Deep Learning and Machine Learning}: Object Detection, Object Classification, Gradient Descent, Logistic Regression 
+
+\rsection{Work Experience}
+
+\bt{Harris Corporation}\dash Software Engineer: Image Processing\hfill \gray{July 2018 - Present}
+
+\begin{itemize}
+\item[$\bullet$] Built \textbf{Python} tool to automate Maritime data extraction, saving 2 - 5 days of manual extraction per week.
+\item[$\bullet$] Utilize in-house deep learning tools and \textbf{TensorFlow}'s Object Detection API to build models for detecting ships and types of ships in satellite imagery. (\textbf{Python} and \textbf{NumPy})
+\item[$\bullet$] Spearheaded all 4 stages of the machine learning pipeline: data processing, feature engineering and selection, modeling, and optimization.
+\item[$\bullet$] Implemented a blur detection scheme from a research paper released by Microsoft Research Asia using \textbf{Python}, \textbf{NumPy}, \textbf{OpenCV}, and \textbf{PyWavelets}.
+\item[$\bullet$] Continuously researching and implementing deep learning techniques to improve the ship detection model by improving accuracy and handling overfitting. 
+\end{itemize} 
+
+\gap
+
+\bt{SavvySuit}\dash Software Engineer Intern \hfill \gray{May 2016 - November 2016}
+
+\begin{itemize}
+\item[$\bullet$] Implemented a search and search filtering feature to check for conflicts of interest in a database of attorney clients using \textbf{JavaScript}, \textbf{Polymer}, and \textbf{Node.js}.
+\end{itemize}
+
+\gap
+
+\bt{Lockheed Martin} \dash Software Developer Intern \hfill \gray{August 2015 - May 2016}
+
+\begin{itemize}
+\item[$\bullet$] Developed software in \textbf{C} and \textbf{C++} for a classified military missile program. Focused on bug fixes and code refactoring.
+\end{itemize}
+
+\rsection{Projects}
+
+\bt{Knest}\dash Team of 4 \hfill \gray{September 2017 - May 2018}
+
+\begin{itemize}
+\item[$\bullet$] \textbf{Won 1st in Discipline (Computer Science)} at Florida's State-Wide Senior Design Showcase 2018.
+\item[$\bullet$] Knest is a desktop application that uses deep learning and image processing techniques to detect birds in large sets photos and enhance them. (\textbf{Python}, \textbf{TFLearn}, \textbf{TensorFlow}'s Object Detection API, \textbf{NumPy}, and \textbf{OpenCV}) 
+\end{itemize}
+
+\gap
+
+\bt{Collaboard}\dash Team of 2\hfill \gray{January 2016}
+
+\begin{itemize}
+\item[$\bullet$] \textbf{Won 1st place} overall at PolyHacks Hackathon.
+\item[$\bullet$] Collaboard is a web application that consists of a interactive whiteboard and chat. (\textbf{JavaScript}, \textbf{Socket.IO}, and \textbf{Node.js} with \textbf{Express.js})
+\end{itemize}
+
+\gap
+
+\bt{Class-ify}\dash Individual project \hfill \gray{November 2015}
+
+\begin{itemize}
+\item[$\bullet$] \textbf{Won the education award} at KnightHacks Hackathon.
+\item[$\bullet$] Class-ify is a lightweight Chrome Extension that injects Rate My Professor ratings into the the UCF's class search page. (\textbf{JavaScript})
+\end{itemize}
+
+\rsection{Extracurricular}
+
+\bt{Grace Hopper Conference}\dash Hopper \hfill \gray{October 4 - 6, 2017}
+
+\begin{itemize}
+\item[$\bullet$] Nine hours of volunteer service at the world largest conference for women in computing.
+\end{itemize}
+
+\end{document}
