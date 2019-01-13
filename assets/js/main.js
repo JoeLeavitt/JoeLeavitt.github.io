@@ -32,7 +32,9 @@ $(function() {
     var data = [
         {
             "command": "whoami",
-            "response": "Hi! I'm Joe, a Computer Science graduate from UCF and Software Engineer at Harris Corporation :-)"
+            "response": "Hi! I'm Joe, a recent Computer Science graduate from UCF and Software Engineer at Harris Corporation.<br><br>" +
+			"During my last year at UCF, my team won 1st in discipline (computer science) at Florida's State-Wide Student Engineering Design Showcase. See <a href='/press_0'>this</a> tweet and <a href='/press_1'>this</a> article.<br><br>" +
+			"Also, game AI systems such as OpenAI Five and AlphaGo fascinate me."
         },
         {
             "command": "cd info",
@@ -50,7 +52,7 @@ $(function() {
         {
             "command": "cat about_me.txt",
             "prompt": "~/info",
-            "response": "todo"
+            "response": "I enjoy drinking green tea and playing competitive video games (Dota, StarCraft, World of Warcraft). At some point in time I've been in the 99.99th percentile in all 3 of those video games. Sometimes I spend my free time reading research papers on novel machine learning/deep learning algorithms and theoretical physics."
         },
     ];
     
