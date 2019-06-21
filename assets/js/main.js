@@ -46,13 +46,12 @@ $(function() {
                         "<a href='/resume'>resume</a><br>" + 
                         "<a href='/github'>github</a><br>" + 
                         "<a href='/linkedin'>linkedin</a><br>" + 
-                        "<a href='/medium'>medium</a><br>" + 
                         "about_me.txt"
         },
         {
             "command": "cat about_me.txt",
             "prompt": "~/info",
-            "response": "I enjoy drinking green tea and playing competitive video games (Dota, StarCraft, World of Warcraft). At some point in time I've been in the 99.99th percentile in all 3 of those video games. Sometimes I spend my free time reading research papers on novel machine learning/deep learning algorithms and theoretical physics."
+            "response": "I enjoy drinking green tea and playing competitive video games (Dota, StarCraft, World of Warcraft). At some point in time I've been in the 99.99th percentile in all 3 of those video games."
         },
     ];
     
