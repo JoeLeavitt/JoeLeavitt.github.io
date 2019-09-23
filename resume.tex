@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 
 % page dimensions
-\usepackage[top=.3in, bottom=.35in, left=0.35in, right=.35in]{geometry}
+\usepackage[top=.5in, bottom=.5in, left=.35in, right=.35in]{geometry}
 \usepackage{xcolor}
 \usepackage{tabularx}
 \usepackage{hyperref}
@@ -13,7 +13,7 @@
 
 % font
 \usepackage[T1]{fontenc}
-\usepackage[rm,light,sfdefault]{roboto}
+\usepackage[medium,light,sfdefault]{roboto}
 
 % spacing adjustments
 \setlength\parindent{0pt} % no automatic indent
@@ -23,10 +23,9 @@
 \renewcommand{\baselinestretch}{1} % line spacing
 
 % custom commands
-% \newcommand{\rsection}[1]{\hspace{-0.3in}\rotatebox[origin=l]{90}{\marginnote{#1}}\vspace{-1em}} % section with title in margin
 \newcommand{\rsection}[1]{\vspace{1.5em}\textcolor{gray}{\Large \robotoslab #1}\vspace{0.5em}}
 \newcommand{\bd}[1]{\textbf{#1}}
-\newcommand{\bt}[1]{\textit{\textbf{#1}}} % bold title
+\newcommand{\bt}[1]{\textbf{#1}} % bold title
 \newcommand{\gap}[0]{\vspace{0.3em}} % gap between items
 \newcommand{\sgap}[0]{\vspace{0.2em}} % small gap between items
 \newcommand{\dash}[0]{ $-$ } % styled dash
@@ -44,45 +43,27 @@
     \robotoslab
     \begin{tabular}[x]{@{}l@{}}
         {\Huge Joseph Leavitt} \sgap \\
-       % {\Large \href{}{}}
     \end{tabular}
 &   \footnotesize
     \begin{tabular}[x]{@{}r@{}}
-        (772) 812-7473 \\
+        407-635-7186 \\
         JoeLeav1@gmail.com \\
         https://github.com/JoeLeavitt \\
     \end{tabular}
 \end{tabularx}
 \rule{7.8in}{0.05em}
 
-%\gap
-
-\rsection{Education}
-
-\bt{University of Central Florida} \hfill \gray{2014 - 2018}
-
-Bachelor of Science in Computer Science \hfill GP\hspace{-0.5px}A: 3.2/4.0
-
-\rsection{Skills}
-
-\textbf{Languages}: Python, Java, JavaScript, HTML, CSS
-
-\textbf{Frameworks and Libraries}: Node.js, Socket.IO, Polymer.js, TensorFlow, TensorFlow Object Detection API, TFLearn, NumPy, OpenCV, fast.ai, PyTorch
-
-\textbf{Tools}: AWS, Jupyer, Vim, Cron, Bash, Terminal, Linux, macOS, Windows, Git, IntelliJ IDEA, tmux, WinSCP
-
-\textbf{Deep Learning and Machine Learning}: Object Detection, Object Classification, Gradient Descent, Logistic Regression 
-
 \rsection{Work Experience}
 
-\bt{Harris Corporation}\dash Software Engineer: Image Processing\hfill \gray{July 2018 - Present}
+\bt{L3 Harris Technologies}\dash Software Engineer\hfill \gray{July 2018 - Present}
 
 \begin{itemize}
-\item[$\bullet$] Built \textbf{Python} tool to automate Maritime data extraction, saving 2 - 5 days of manual extraction per week.
-\item[$\bullet$] Utilize in-house deep learning tools and \textbf{TensorFlow}'s Object Detection API to build models for detecting ships and types of ships in satellite imagery. (\textbf{Python} and \textbf{NumPy})
-\item[$\bullet$] Spearheaded all 4 stages of the machine learning pipeline: data processing, feature engineering and selection, modeling, and optimization.
-\item[$\bullet$] Implemented a blur detection scheme from a research paper released by Microsoft Research Asia using \textbf{Python}, \textbf{NumPy}, \textbf{OpenCV}, and \textbf{PyWavelets}.
-\item[$\bullet$] Continuously researching and implementing deep learning techniques to improve the ship detection model by improving accuracy and handling overfitting. 
+\item[$\bullet$]  Created a python tool to automate maritime ship data extraction, saving 2 - 5 days of manual work per week.
+\item[$\bullet$] Utilized in-house deep learning tools and TensorFlow's Object Detection API to train models for detecting ships and types of ships in satellite imagery. (Python and NumPy)
+\item[$\bullet$] Augmented region proposals to cover the range of object sizes in a remote sensing data set by adding additional anchors and increasing the set of aspect ratios between the width and height of each anchor. This change increased accurate predictions in an image with 213 ships by 67.79\%, resulting in a total accuracy of 97.18\%. 
+\item[$\bullet$] Implemented and trained several linear regression models and a random forest regression model for an internal tool that ranks candidates based on a photo of their resume. (Python, Scikit-learn, and Pandas).
+\item[$\bullet$] Proposed a state of the art object detection and tracking project to innovation leaders at Harris. Received \$45,000 in funding.
+
 \end{itemize} 
 
 \gap
@@ -90,7 +71,7 @@ Bachelor of Science in Computer Science \hfill GP\hspace{-0.5px}A: 3.2/4.0
 \bt{SavvySuit}\dash Software Engineer Intern \hfill \gray{May 2016 - November 2016}
 
 \begin{itemize}
-\item[$\bullet$] Implemented a search and search filtering feature to check for conflicts of interest in a database of attorney clients using \textbf{JavaScript}, \textbf{Polymer}, and \textbf{Node.js}.
+\item[$\bullet$] Implemented a search and search filtering feature to check for conflicts of interest in a database of attorney clients using JavaScript, Polymer, and Node.js.
 \end{itemize}
 
 \gap
@@ -98,7 +79,7 @@ Bachelor of Science in Computer Science \hfill GP\hspace{-0.5px}A: 3.2/4.0
 \bt{Lockheed Martin} \dash Software Developer Intern \hfill \gray{August 2015 - May 2016}
 
 \begin{itemize}
-\item[$\bullet$] Developed software in \textbf{C} and \textbf{C++} for a classified military missile program. Focused on bug fixes and code refactoring.
+\item[$\bullet$] Developed software in C and C++ for a classified military missile program. Focused on bug fixes and code refactoring.
 \end{itemize}
 
 \rsection{Projects}
@@ -107,7 +88,8 @@ Bachelor of Science in Computer Science \hfill GP\hspace{-0.5px}A: 3.2/4.0
 
 \begin{itemize}
 \item[$\bullet$] \textbf{Won 1st in Discipline (Computer Science)} at Florida's State-Wide Senior Design Showcase 2018.
-\item[$\bullet$] Knest is a desktop application that uses deep learning and image processing techniques to detect birds in large sets photos and enhance them. (\textbf{Python}, \textbf{TFLearn}, \textbf{TensorFlow}'s Object Detection API, \textbf{NumPy}, and \textbf{OpenCV}) 
+\item[$\bullet$] Knest is a desktop application that uses deep learning and image processing techniques to detect birds in large sets photos and enhance them. (Python, TFLearn, TensorFlow's Object Detection API, NumPy, and OpenCV).
+\item[$\bullet$] I was responsible for implementing, training, and fine-tuning the object detection model for bird detection.
 \end{itemize}
 
 \gap
@@ -115,8 +97,7 @@ Bachelor of Science in Computer Science \hfill GP\hspace{-0.5px}A: 3.2/4.0
 \bt{Collaboard}\dash Team of 2\hfill \gray{January 2016}
 
 \begin{itemize}
-\item[$\bullet$] \textbf{Won 1st place} overall at PolyHacks Hackathon.
-\item[$\bullet$] Collaboard is a web application that consists of a interactive whiteboard and chat. (\textbf{JavaScript}, \textbf{Socket.IO}, and \textbf{Node.js} with \textbf{Express.js})
+\item[$\bullet$] \textbf{Won 1st place} overall at PolyHacks Hackathon. Collaboard is a web application that consists of a interactive whiteboard and chat. (JavaScript, Socket.IO, and Node.js with Express.js)
 \end{itemize}
 
 \gap
@@ -124,16 +105,28 @@ Bachelor of Science in Computer Science \hfill GP\hspace{-0.5px}A: 3.2/4.0
 \bt{Class-ify}\dash Individual project \hfill \gray{November 2015}
 
 \begin{itemize}
-\item[$\bullet$] \textbf{Won the education award} at KnightHacks Hackathon.
-\item[$\bullet$] Class-ify is a lightweight Chrome Extension that injects Rate My Professor ratings into the the UCF's class search page. (\textbf{JavaScript})
+\item[$\bullet$] \textbf{Won the education award} at KnightHacks Hackathon. Class-ify is a lightweight Chrome Extension that injects Rate My Professor ratings into the UCF's class search page. (JavaScript)
 \end{itemize}
 
-\rsection{Extracurricular}
+\rsection{Skills}
 
-\bt{Grace Hopper Conference}\dash Hopper \hfill \gray{October 4 - 6, 2017}
+\textbf{Languages}: Python, JavaScript, HTML, CSS, Java
 
+\textbf{Frameworks and Libraries}: TensorFlow, TensorFlow Object Detection API, TFLearn, NumPy, Scikit-learn, Pandas, Node.js
+
+\textbf{Tools}: AWS, Git, Jupyter, Vim, Cron, Bash, Terminal, Linux, macOS, Windows, WinSCP
+
+\textbf{Deep Learning/Machine Learning}: Object Detection, Object Classification, Regression. 
 \begin{itemize}
-\item[$\bullet$] Nine hours of volunteer service at the world largest conference for women in computing.
+\item[$\bullet$] Proficient with deep convolutional architectures such as Resnet and Inception.
+\item[$\bullet$] Proficient with object detection pipelines such as Faster RCNN and YOLOv3.
+\item[$\bullet$] Experienced in model fine-tuning and optimization.
 \end{itemize}
+
+\rsection{Education}
+
+\bt{University of Central Florida} \hfill \gray{2014 - 2018}
+
+Bachelor of Science in Computer Science \hfill GP\hspace{-0.5px}A: 3.2/4.0
 
 \end{document}
