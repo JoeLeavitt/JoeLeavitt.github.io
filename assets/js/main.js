@@ -33,7 +33,7 @@ $(function() {
         {
             "command": "whoami",
             "response": "Hi! I'm Joe, a recent Computer Science graduate from UCF and Software Engineer at L3 Harris Technologies.<br><br>" +
-			"During my last year at UCF, my team won 1st in discipline (computer science) at Florida's State-Wide Student Engineering Design Showcase. See <a href='/press_0'>this</a> tweet and <a href='/press_1'>this</a> article.<br><br>"
+			"During my last year at UCF, my team won 1st in discipline (computer science) at Florida's State-Wide Student Engineering Design Showcase. See <a href='/press_0'>this</a> tweet and <a href='/press_1'>this</a> article.<br>"
         },
         {
             "command": "cd info",
